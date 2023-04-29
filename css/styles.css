@@ -429,9 +429,11 @@ hero-section-container {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 .footer-right-side {
+  margin-right: 80px;
+}
+.footer-left-side {
   margin-right: 120px;
 }
 .footer-text {
@@ -440,11 +442,56 @@ hero-section-container {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--html-button-color);
-  margin-bottom: 16px;
 }
 .fotter-section-list {
   display: flex;
   gap: 16px;
+}
+.contact-form {
+  display: flex;
+  gap: 24px;
+}
+.footer-button {
+  min-width: 165px;
+  min-height: 40px;
+  background-color: var(--primary-button);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--html-button-color);
+  text-align: left;
+  padding-left: 24px;
+  transition: var(--transition-duration-funk);
+}
+.footer-label {
+}
+.footer-button:hover,
+.footer-button:focus {
+  background-color: var(--background-button);
+}
+.footer-text {
+  margin-bottom: 16px;
+}
+.contact-form-input {
+  background-color: transparent;
+  width: 264px;
+  height: 40px;
+  border: 1px solid var(--html-button-color);
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.footer-svg {
+  fill: #f4f4fd;
+}
+.footer-button-icon {
+  fill: var(--html-button-color);
+  position: absolute;
+  transform: translateX(16px);
+}
+
+.main-footer-button-container {
 }
 
 .five-section-icon {
@@ -465,9 +512,7 @@ hero-section-container {
 .five-section-icon:focus {
   background-color: var(--footer-icon-color);
 }
-.footer-svg {
-  fill: #f4f4fd;
-}
+
 /* =======footer====== */
 /* portfolio-section */
 
@@ -622,6 +667,75 @@ hero-section-container {
 .modal-close-btn-icon {
   transition: fill var(--transition-duration-funk);
 }
+.modal-button-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  padding-top: 72px;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+.modal-contact-label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.modal-name-input {
+  width: 360px;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  display: flex;
+  margin-top: 8px;
+  padding-left: 34px;
+  margin-bottom: 8px;
+}
+.modal-icon-person {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  fill: #2e2f42;
+  display: block;
+}
+.contact-form-massage {
+  width: 360px;
+  height: 120px;
+  width: 360px;
+  padding: 18px;
+  resize: none;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  margin-bottom: 8px;
+}
+.modal-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.modal-name-container {
+  position: relative;
+  margin-bottom: 8px;
+}
+.modal-contact-form {
+  padding-left: 24px;
+}
 
 .modal-close-button {
   position: absolute;
@@ -646,6 +760,33 @@ hero-section-container {
 .modal-close-button:focus {
   background-color: #404bbf;
   border: none;
+}
+.modal-button-submit {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  color: var(--html-button-color);
+  background-color: var(--primary-button);
+  border: none;
+  min-width: 169px;
+  transition: background-color var(--transition-duration-funk);
+}
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--background-button);
 }
 
 /* ========/MODAL-WINDOW====== */
