@@ -414,7 +414,7 @@
             <p class="modal-button-text">Leave your contacts and we will call you back</p>
 
             <form class="modal-contact-form">
-                <label class="modal-contact-label">Name
+                <label class="modal-contact-label"><span class="modal-contact-label-margin">Name</span>
                     <div class="modal-name-container">
                         <input class="modal-name-input" type="text" name="user_name" required minlength="2"
                             placeholder="">
@@ -423,7 +423,7 @@
                         </svg>
                     </div>
                 </label>
-                <label class="modal-contact-label">Phone
+                <label class="modal-contact-label"><span class="modal-contact-label-margin">Phone</span>
                     <div class="modal-name-container">
                         <input class="modal-name-input" type="tel" name="user_phone" required minlength="2"
                             placeholder="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
@@ -432,7 +432,7 @@
                         </svg>
                     </div>
                 </label>
-                <label class="modal-contact-label">E-mail
+                <label class="modal-contact-label"><span class="modal-contact-label-margin">E-mail</span>
                     <div class="modal-name-container">
                         <input class="modal-name-input" type="email"
                             pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
@@ -443,14 +443,14 @@
                     </div>
                 </label>
                 <div class="modal-name-container textaria-wrap">
-                    <label class="modal-contact-label">Comment
+                    <label class="modal-contact-label"><span class="modal-contact-label-margin">Comment</span>
                         <textarea name="" class="contact-form-massage" placeholder="Text input"></textarea>
                     </label>
                 </div>
 
                 <div class="modal-field"><input class="visually-hidden input-check" value="true" type="checkbox"
                         name="user-privacy" id="user-privacy">
-                    <label class="check-text">
+                    <label for="user-privacy" class="check-text">
                         <span class="check-empty">
                             <svg class="input-check-icon" width="10" height="8">
                                 <use href="./images/icon.svg#icon-Vector"></use>

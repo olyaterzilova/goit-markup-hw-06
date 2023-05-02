@@ -698,15 +698,17 @@ hero-section-container {
   color: #2e2f42;
   margin-bottom: 16px;
 }
+.modal-contact-label-margin {
+  margin-bottom: 8px;
+  display: block;
+}
 .modal-contact-label {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-bottom: 4px;
+
   display: block;
 }
 .modal-name-input {
@@ -728,6 +730,16 @@ hero-section-container {
 .modal-name-input:focus + .modal-icon-person {
   fill: var(--primary-button);
 }
+.contact-form-massage {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+}
+.contact-form-massage:focus {
+  border-color: var(--primary-button);
+}
+
 .modal-icon-person {
   position: absolute;
   top: 50%;
